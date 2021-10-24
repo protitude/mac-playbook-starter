@@ -59,3 +59,22 @@
   become: true
   command: /tmp/starship-installer.sh --yes
   when: not starship_result.stat.exists
+
+- name: Check for vundle file
+  stat:
+    path: ~/.vim/bundle/Vundle.vim
+  register: vundle_result
+
+- name: Clone Vundle
+  git:
+    repo: "https://github.com/VundleVim/Vundle.vim.git"
+    dest: "~/.vim/bundle/Vundle.vim"
+  when: not vundle_result.stat.exists
+
+- name: Link Sublime Text folder to Dropbox folder.
+  file:
+    src: "~/Dropbox/programs/Sublime\ Text\ 3"
+    dest: "~/Library/Application\ Support/Sublime\ Text\ 3"
+    force: true
+    state: link
+  with_items: sublime_text
