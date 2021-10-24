@@ -1,0 +1,61 @@
+---
+- name: Check for Drush file
+  stat:
+    path: /usr/local/bin/drush
+  register: drush_result
+
+- name: Get Drush wrapper
+  become: true
+  get_url:
+    url: https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
+    dest: /usr/local/bin/drush
+    mode: 0777
+  when: not drush_result.stat.exists
+
+- name: Check for oh-my-zsh file
+  stat:
+    path: ~/.oh-my-zsh
+  register: ohmy_result
+
+- name: Get oh-my-zsh installer
+  get_url:
+    url: https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+    dest: /tmp/ohmyzsh-installer.sh
+    mode: 0777
+  when: not ohmy_result.stat.exists
+
+- name: Install oh-my-zsh
+  command: /tmp/ohmyzsh-installer.sh
+  when: not ohmy_result.stat.exists
+
+- name: Copy zshrc from home to tmp
+  copy: remote_src=False src=~/.zshrc dest=/tmp/old.zshrc
+  when: not ohmy_result.stat.exists
+
+- name: Remove old zshrc
+  ansible.builtin.file:
+    path: ~/.zshrc
+    state: absent
+
+- name: Create symbolic link for zshrc
+  file:
+    src: "~/Documents/dotfiles/.zshrc"
+    dest: "~/.zshrc"
+    state: link
+
+- name: Check for Starship file
+  stat:
+    path: /usr/local/bin/starship
+  register: starship_result
+
+- name: Get starship installer
+  get_url:
+    url: https://starship.rs/install.sh
+    dest: /tmp/starship-installer.sh
+    mode: 0777
+  when: not starship_result.stat.exists
+
+- name: Install starship
+  become: true
+  command: /tmp/starship-installer.sh --yes
+  when: not starship_result.stat.exists
