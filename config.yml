@@ -135,6 +135,7 @@ homebrew_cask_apps:
   - unetbootin
   - vagrant
   - vagrant-manager
+  - veracrypt
   - visual-studio-code
   - vlc
   - webpquicklook
