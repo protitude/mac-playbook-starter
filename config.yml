@@ -88,6 +88,7 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - subversion
+  - thefuck
   - tmux
   - tree
   - webp
