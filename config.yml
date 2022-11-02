@@ -84,6 +84,7 @@ homebrew_installed_packages:
   - readline
   - s3cmd
   - selenium-server-standalone
+  - starship
   - sqlite
   - sqlite
   - ssh-copy-id
@@ -93,7 +94,6 @@ homebrew_installed_packages:
   - tree
   - webp
   - wget
-  - wrk
   - wrk
   - zsh-history-substring-search
 
@@ -126,10 +126,12 @@ homebrew_cask_apps:
   - nvalt
   - screenflow
   - sequel-ace
+  - signal
   - skype
   - skitch
   - slack
   - sublime-text
+  - raycast
   - thunderbird
   - tower
   - transmit
@@ -147,7 +149,7 @@ mas_installed_apps:
   - { id: 405399194 , name: "Kindle" }
   - { id: 1295203466 , name: "MS Remote Desktop" }
   - { id: 1116599239, name: "Nordvpn" }
-  - { id: 409203825 , name: "Numbers" }
+  - { id: 905953485, name: "Numbers" }
   - { id: 409201541 , name: "Pages" }
   #- { id: 874139669, name: "Signal" }
   - { id: 1475387142, name: "TailScale" }

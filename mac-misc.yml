@@ -43,23 +43,6 @@
     dest: "~/.zshrc"
     state: link
 
-- name: Check for Starship file
-  stat:
-    path: /usr/local/bin/starship
-  register: starship_result
-
-- name: Get starship installer
-  get_url:
-    url: https://starship.rs/install.sh
-    dest: /tmp/starship-installer.sh
-    mode: 0777
-  when: not starship_result.stat.exists
-
-- name: Install starship
-  become: true
-  command: /tmp/starship-installer.sh --yes
-  when: not starship_result.stat.exists
-
 - name: Check for vundle file
   stat:
     path: ~/.vim/bundle/Vundle.vim
