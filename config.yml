@@ -107,10 +107,12 @@ homebrew_cask_apps:
   - android-platform-tools
   - docker
   - android-file-transfer
+  - balenaetcher
   - caffeine
   - calibre
   - chromedriver
   - cyberduck
+  - discord
   - google-chrome
   - font-hack-nerd-font
   - gpg-suite
@@ -124,17 +126,20 @@ homebrew_cask_apps:
   - licecap
   - macvim
   - nvalt
+  - raspberry-pi-imager
   - screenflow
   - sequel-ace
   - signal
   - skype
   - skitch
   - slack
+  - steam
   - sublime-text
   - raycast
   - thunderbird
   - tower
   - transmit
+  - ultimaker-cura
   - unetbootin
   - vagrant
   - vagrant-manager
