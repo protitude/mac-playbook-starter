@@ -36,6 +36,7 @@ dotfiles_files:
   - .tmux-git
   - .tmux.conf
   - .tmux-git.conf
+  - .tmux.theme.sh
   - .vim
   - .vimrc
   - .zshrc
@@ -81,6 +82,7 @@ homebrew_installed_packages:
   - php@7.4
   - pv
   - python
+  - rclone
   - readline
   - s3cmd
   - selenium-server-standalone
