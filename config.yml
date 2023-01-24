@@ -167,6 +167,7 @@ mas_installed_apps:
   - { id: 1116599239, name: "Nordvpn" }
   - { id: 905953485, name: "Numbers" }
   - { id: 409201541 , name: "Pages" }
+  - { id: 1497506650 , name: "Yubikey Authenticator" }
   #- { id: 874139669, name: "Signal" }
   - { id: 1475387142, name: "TailScale" }
   - { id: 497799835, name: "Xcode" }
