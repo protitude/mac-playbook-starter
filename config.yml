@@ -73,7 +73,7 @@ homebrew_installed_packages:
   - libpng
   - linode-cli
   - mas
-  - mcrypt
+  - neovim
   - newsboat
   - nmap
   - node
@@ -84,7 +84,7 @@ homebrew_installed_packages:
   - p7zip
   - packer
   - pantheon-systems/external/terminus
-  - php@7.4
+  - php@8.1
   - pv
   - python
   - rclone
@@ -136,6 +136,7 @@ homebrew_cask_apps:
   - macvim
   - netnewswire
   - nvalt
+  - obs
   - obsidian
   - raspberry-pi-imager
   - screenflow
