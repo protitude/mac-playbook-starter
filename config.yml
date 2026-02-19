@@ -56,11 +56,10 @@ homebrew_installed_packages:
   - gh
   - gifsicle
   - git
-  - github/gh/gh
   - go
-  - gpg
+  - gnupg
   - guetzli
-  - hh
+  - hstr
   - htop
   - httpie
   - hub
@@ -78,7 +77,6 @@ homebrew_installed_packages:
   - nmap
   - node
   - node@14
-  - npm
   - nvm
   - openssl
   - p7zip
@@ -90,9 +88,8 @@ homebrew_installed_packages:
   - rclone
   - readline
   - s3cmd
-  - selenium-server-standalone
+  - selenium-server
   - starship
-  - sqlite
   - sqlite
   - ssh-copy-id
   - subversion
@@ -105,6 +102,21 @@ homebrew_installed_packages:
   - wrk
   - youtube-dl
   - zsh-history-substring-search
+  - cmake
+  - ddev
+  - goaccess
+  - llm
+  - mkcert
+  - node@16
+  - node@18
+  - node@20
+  - php
+  - php@8.2
+  - php@8.3
+  - pipx
+  - rust
+  - sqlite-utils
+  - tidy-html5
 
 homebrew_taps:
   - homebrew/core
@@ -116,7 +128,6 @@ homebrew_cask_apps:
   - android-platform-tools
   - docker-desktop
   - android-file-transfer
-  - balenaetcher
   - caffeine
   - calibre
   - chromedriver
@@ -156,6 +167,10 @@ homebrew_cask_apps:
   - visual-studio-code
   - vlc
   - webpquicklook
+  - deskpad
+  - kindle
+  - macfuse
+  - postman
   - ddev/ddev/ddev
 
 # See `geerlingguy.mas` role documentation for usage instructions.
