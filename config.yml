@@ -46,24 +46,25 @@ homebrew_installed_packages:
   - autoconf
   - awscli
   - bash-completion
+  - cmake
   - colordiff
-  - cowsay
   - composer
+  - cowsay
+  - ddev
   - doxygen
   - fortune
   - gettext
   - gflags
   - gh
-  - gifsicle
   - git
-  - go
   - gnupg
+  - go
+  - goaccess
   - guetzli
   - hstr
   - htop
   - httpie
   - hub
-  - hugo
   - imagemagick
   - iperf
   - jq
@@ -71,52 +72,47 @@ homebrew_installed_packages:
   - libevent
   - libpng
   - linode-cli
+  - llm
   - mas
+  - mkcert
   - neovim
   - newsboat
   - nmap
   - node
   - node@14
+  - node@16
+  - node@18
+  - node@20
   - nvm
   - openssl
   - p7zip
   - packer
   - pantheon-systems/external/terminus
-  - php@8.1
+  - php
+  - php@8.3
+  - pipx
+  - pnpm
   - pv
   - python
   - rclone
   - readline
+  - rust
   - s3cmd
   - selenium-server
-  - starship
   - sqlite
+  - sqlite-utils
   - ssh-copy-id
+  - starship
   - subversion
   - syncthing
   - thefuck
+  - tidy-html5
   - tmux
   - tree
   - webp
   - wget
   - wrk
-  - youtube-dl
   - zsh-history-substring-search
-  - cmake
-  - ddev
-  - goaccess
-  - llm
-  - mkcert
-  - node@16
-  - node@18
-  - node@20
-  - php
-  - php@8.2
-  - php@8.3
-  - pipx
-  - rust
-  - sqlite-utils
-  - tidy-html5
 
 homebrew_taps:
   - homebrew/core
@@ -141,10 +137,7 @@ homebrew_cask_apps:
   #- firefox
   - handbrake-app
   - insync
-  - iterm2
   - licecap
-  - macvim-app
-  - netnewswire
   - obs
   - obsidian
   - orbstack
@@ -154,7 +147,6 @@ homebrew_cask_apps:
   - signal
   - slack
   - steam
-  - sublime-text
   - raycast
   - thunderbird
   - tower
@@ -175,7 +167,7 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
-  - { id: 409183694 , name: "Keynote" }
+  #- { id: 409183694 , name: "Keynote" }
   - { id: 405399194 , name: "Kindle" }
   - { id: 1295203466 , name: "MS Remote Desktop" }
   - { id: 1116599239, name: "Nordvpn" }
