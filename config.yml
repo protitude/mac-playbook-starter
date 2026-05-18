@@ -57,6 +57,7 @@ homebrew_installed_packages:
   - gflags
   - gh
   - git
+  - gitleaks
   - gnupg
   - go
   - goaccess
@@ -117,9 +118,11 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - atlassian/homebrew-acli
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - acli
   - adobe-creative-cloud
   - android-platform-tools
   - docker-desktop
@@ -127,9 +130,11 @@ homebrew_cask_apps:
   - caffeine
   - calibre
   - chromedriver
+  - copilot
   - cyberduck
   - discord
   - ghostty
+  - gogcli
   #- google-chrome
   - font-hack-nerd-font
   - gpg-suite
