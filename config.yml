@@ -125,11 +125,10 @@ homebrew_cask_apps:
   - acli
   - adobe-creative-cloud
   - android-platform-tools
-  - docker-desktop
+  #- docker-desktop
   - android-file-transfer
   - caffeine
   - calibre
-  - chromedriver
   - copilot
   - cyberduck
   - discord
